@@ -1,0 +1,39 @@
+{
+  "native": {
+    "path_ignore": []
+  },
+  "publish": {
+    "web": 0,
+    "native": 1,
+    "path": "bin-release"
+  },
+  "egret_version": "5.0.7",
+  "template": {},
+  "eui": {
+    "exmlRoot": [
+      "resource/eui_skins"
+    ],
+    "themes": [
+      "resource/default.thm.json"
+    ],
+    "exmlPublishPolicy": "content"
+  },
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "res"
+    },
+    {
+      "name": "eui"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "promise",
+      "path": "./promise"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SceneGameSkin" width="640" height="1145" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="GameBG3_jpg" x="0" y="-1.33" width="640" height="1145"  locked="true"/>
+	<e:Button label="" x="20.04" y="7" width="94" height="73">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="BackBtn_png" source.down="BackBtn1_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image source="WordFrame_png" x="25.68" y="112.52" anchorOffsetX="0" width="580.82" anchorOffsetY="0" height="726.7" locked="true"/>
+	<e:Group width="371.21" height="95.46" x="133.15" y="412.27" anchorOffsetX="0" anchorOffsetY="0">
+		<ns1:AnswerWord  width="70" height="70" x="14.8" y="10.75" anchorOffsetX="-1.53" anchorOffsetY="-3.07" skinName="WordSkin"/>
+		<ns1:AnswerWord  width="70" height="70" x="103.35" y="14.32" skinName="WordSkin"/>
+		<ns1:AnswerWord  width="70" height="70" x="188.82" y="14" skinName="WordSkin"/>
+		<ns1:AnswerWord  width="70" height="70" x="275.66" y="14.5" skinName="WordSkin"/>
+	</e:Group>
+</e:Skin>

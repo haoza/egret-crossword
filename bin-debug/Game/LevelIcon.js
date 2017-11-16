@@ -1,4 +1,3 @@
-// TypeScript file
 var __reflect = (this && this.__reflect) || function (p, c, t) {
     p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
 };
@@ -16,26 +15,16 @@ var LevelIcon = (function (_super) {
     __extends(LevelIcon, _super);
     function LevelIcon() {
         var _this = _super.call(this) || this;
-        _this.addEventListener(eui.UIEvent.COMPLETE, _this.UIcomplete, _this);
-        _this.skinName = 'src/Game/levelIconSkin.exml';
+        _this.skinName = "src/Game/levelIconSkin.exml";
         return _this;
     }
-    LevelIcon.prototype.UIcomplete = function () {
-        console.log('UIcomplete');
-    };
-    LevelIcon.prototype.createChildren = function () {
-        _super.prototype.createChildren.call(this);
-        console.log("createChildren");
-    };
     Object.defineProperty(LevelIcon.prototype, "Level", {
         get: function () {
-            if (this.lb_level) {
-                return parseInt(this.lb_level.label);
-            }
+            return parseInt(this.lb_level.text);
         },
         set: function (value) {
             if (this.lb_level) {
-                this.lb_level.label = value.toString();
+                this.lb_level.text = value.toString();
             }
         },
         enumerable: true,
@@ -44,4 +33,3 @@ var LevelIcon = (function (_super) {
     return LevelIcon;
 }(eui.Button));
 __reflect(LevelIcon.prototype, "LevelIcon");
-//# sourceMappingURL=LevelIcon.js.map

@@ -1,11 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="LevelIconSkin" width="77" height="77" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Button id="lb_level" label="" x="0" y="0" width="77" height="77" enabled="true">
-		<e:skinName>
-			<e:Skin states="up,down,disabled">
-			<e:Image width="100%" height="100%" source="gs_select_1_png" source.disabled="gs_select_dis_png"/>
-			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-			</e:Skin>
-		</e:skinName>
-	</e:Button>
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LevelIconSkin" states="up,down,disabled" width="77" height="77"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="gs_select_1_png" horizontalCenter="0" verticalCenter="0" includeIn="up,down"/>
+	<e:Image source="gs_select_dis_png" includeIn="disabled" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="lb_level" text="0" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>

@@ -31,6 +31,8 @@ class LoadingUI extends egret.Sprite {
 
     public constructor() {
         super();
+          //预先加载声音
+         SoundMenager.Shared();
         this.createView();
     }
 

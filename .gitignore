@@ -1,0 +1,21 @@
+.DS_Store
+*.DS_Store
+.AppleDouble
+.LSOverride
+.git
+.wing
+bin-debug
+bin-release
+.idea
+.git/*
+*.bak
+.bowerrc
+node_modules/
+/bower_components
+dist/
+# Thumbnails
+._*
+.font-spider
+*.log
+.vscode
+.eslintcache

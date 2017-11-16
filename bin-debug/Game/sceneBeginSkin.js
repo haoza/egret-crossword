@@ -28,6 +28,7 @@ var ScenceBegin = (function (_super) {
     };
     ScenceBegin.prototype.UIcomplete = function () {
         this.btn_begin.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onclick_begin, this);
+        this.btn_setting.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onclick_setting, this);
     };
     ScenceBegin.prototype.childrenCreated = function () {
         _super.prototype.childrenCreated.call(this);
@@ -36,7 +37,10 @@ var ScenceBegin = (function (_super) {
         this.parent.addChild(SceneLevels.Shared());
         this.parent.removeChild(this);
     };
+    ScenceBegin.prototype.onclick_setting = function () {
+        SoundMenager.Shared().PlayClick();
+        this.addChild(GameSetting.Shared());
+    };
     return ScenceBegin;
 }(eui.Component));
 __reflect(ScenceBegin.prototype, "ScenceBegin");
-//# sourceMappingURL=sceneBeginSkin.js.map

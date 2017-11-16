@@ -30,8 +30,6 @@ declare module skins{
 	class RadioButtonSkin extends eui.Skin{
 	}
 }
-declare class SceneGameSkinSkin extends eui.Skin{
-}
 declare module skins{
 	class ScrollerSkin extends eui.Skin{
 	}

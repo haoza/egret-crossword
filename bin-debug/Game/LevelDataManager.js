@@ -50,4 +50,3 @@ var LevelDataManager = (function () {
     return LevelDataManager;
 }());
 __reflect(LevelDataManager.prototype, "LevelDataManager");
-//# sourceMappingURL=LevelDataManager.js.map

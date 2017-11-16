@@ -69,6 +69,15 @@ var SceneLevels = (function (_super) {
         this.group_levels.addChild(group);
         //卷动到最底层
         this.group_levels.scrollV = group.height - 1150;
+        this.img_arrow = new eui.Image();
+        this.img_arrow.source = RES.getRes("PageDownBtn_png");
+        this.img_arrow.anchorOffsetX = 124 / 2 - group.getChildAt(0).width / 2;
+        this.img_arrow.anchorOffsetY = 76;
+        this.img_arrow.touchEnabled = false;
+        this.img_arrow.x = group.getChildAt(milestone - 1).x;
+        this.img_arrow.y = group.getChildAt(milestone - 1).y;
+        this.sel_level = milestone;
+        group.addChild(this.img_arrow);
     };
     SceneLevels.prototype.onclick_back = function () {
         this.parent.addChild(ScenceBegin.Shared());
@@ -83,11 +92,22 @@ var SceneLevels = (function (_super) {
         }
         else {
             //进入并开始游戏
-            this.parent.addChild(SceneLevels.Shared());
+            this.parent.addChild(SceneGame.Shared());
+            SceneGame.Shared().InitLevel(icon.Level);
             this.parent.removeChild(this);
+        }
+    };
+    SceneLevels.prototype.OpenLevel = function (level) {
+        var icon = this.LevelIcons[level - 1];
+        icon.enabled = true;
+        //同时将选定标记置于其上
+        this.img_arrow.x = icon.x;
+        this.img_arrow.y = icon.y;
+        this.sel_level = icon.Level;
+        if (level > LevelDataManager.Shared().Milestone) {
+            LevelDataManager.Shared().Milestone = level;
         }
     };
     return SceneLevels;
 }(eui.Component));
 __reflect(SceneLevels.prototype, "SceneLevels");
-//# sourceMappingURL=SceneLevels.js.map

@@ -3,7 +3,7 @@ class LevelIcon extends eui.Button {
     private lb_level: eui.Label;
     public constructor() {
         super();
-        this.skinName = "src/Game/levelIconSkin.exml";
+        this.skinName = "src/Game/LevelIconSkin.exml";
     }
     public get Level(): number {
         return parseInt(this.lb_level.text);

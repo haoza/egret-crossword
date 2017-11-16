@@ -18,8 +18,8 @@ class SceneLevels extends eui.Component {
 
     public constructor() {
         super();
+        this.addEventListener(eui.UIEvent.COMPLETE, this.complete, this);        
         this.skinName = "src/Game/SceneLevelsSkin.exml";
-        this.addEventListener(eui.UIEvent.COMPLETE, this.complete, this);
 
     }
 

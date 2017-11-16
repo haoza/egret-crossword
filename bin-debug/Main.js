@@ -148,7 +148,6 @@ var Main = (function (_super) {
      * Create scene interface
      */
     Main.prototype.startCreateScene = function () {
-        console.log(ScenceBegin.Shared());
         this.addChild(ScenceBegin.Shared());
     };
     /**
@@ -202,3 +201,4 @@ var Main = (function (_super) {
     return Main;
 }(eui.UILayer));
 __reflect(Main.prototype, "Main");
+//# sourceMappingURL=Main.js.map

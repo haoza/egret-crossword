@@ -142,7 +142,6 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected startCreateScene(): void {
-        console.log(ScenceBegin.Shared())
         this.addChild(ScenceBegin.Shared())
     }
     /**

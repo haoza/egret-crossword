@@ -16,8 +16,8 @@ var ScenceBegin = (function (_super) {
     __extends(ScenceBegin, _super);
     function ScenceBegin() {
         var _this = _super.call(this) || this;
-        _this.skinName = "src/Game/SceneBeginSkin.exml";
         _this.addEventListener(eui.UIEvent.COMPLETE, _this.UIcomplete, _this);
+        _this.skinName = "src/Game/SceneBeginSkin.exml";
         return _this;
     }
     ScenceBegin.Shared = function () {
@@ -27,6 +27,7 @@ var ScenceBegin = (function (_super) {
         return ScenceBegin.shared;
     };
     ScenceBegin.prototype.UIcomplete = function () {
+        console.log(1);
         this.btn_begin.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onclick_begin, this);
         this.btn_setting.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onclick_setting, this);
     };
@@ -44,3 +45,4 @@ var ScenceBegin = (function (_super) {
     return ScenceBegin;
 }(eui.Component));
 __reflect(ScenceBegin.prototype, "ScenceBegin");
+//# sourceMappingURL=sceneBeginSkin.js.map

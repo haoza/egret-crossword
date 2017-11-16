@@ -15,7 +15,7 @@ var LevelIcon = (function (_super) {
     __extends(LevelIcon, _super);
     function LevelIcon() {
         var _this = _super.call(this) || this;
-        _this.skinName = "src/Game/levelIconSkin.exml";
+        _this.skinName = "src/Game/LevelIconSkin.exml";
         return _this;
     }
     Object.defineProperty(LevelIcon.prototype, "Level", {
@@ -33,3 +33,4 @@ var LevelIcon = (function (_super) {
     return LevelIcon;
 }(eui.Button));
 __reflect(LevelIcon.prototype, "LevelIcon");
+//# sourceMappingURL=LevelIcon.js.map

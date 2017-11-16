@@ -14,8 +14,8 @@ class ScenceBegin extends eui.Component {
     private btn_setting:eui.Button;
     public constructor() {
         super();
+        this.addEventListener(eui.UIEvent.COMPLETE, this.UIcomplete, this);        
         this.skinName = "src/Game/SceneBeginSkin.exml";
-        this.addEventListener(eui.UIEvent.COMPLETE, this.UIcomplete, this);
 
     }
     private UIcomplete() {

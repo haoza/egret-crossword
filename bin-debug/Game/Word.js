@@ -70,3 +70,4 @@ var AnswerWord = (function (_super) {
     return AnswerWord;
 }(Word));
 __reflect(AnswerWord.prototype, "AnswerWord");
+//# sourceMappingURL=Word.js.map
